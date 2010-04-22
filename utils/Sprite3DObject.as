@@ -1,13 +1,13 @@
 package utils
 {
-	import away3d.core.base.Billboard;
+	import away3d.sprites.*;
 	
 	/**
-	 * Data class for a billboard's position and speed
+	 * Data class for a sprite's position and speed
 	 */
-	public class BillboardObject
+	public class Sprite3DObject
 	{
-		public var billboard:Billboard;
+		public var sprite:Sprite3D;
 		
 		public var x:Number;
 		
@@ -21,9 +21,9 @@ package utils
 		
 		public var speedz:Number;
 		
-		public function BillboardObject(billboard:Billboard, x:Number, y:Number, z:Number, speedx:Number, speedy:Number, speedz:Number)
+		public function Sprite3DObject(sprite:Sprite3D, x:Number, y:Number, z:Number, speedx:Number, speedy:Number, speedz:Number)
 		{
-			this.billboard = billboard;
+			this.sprite = sprite;
 			this.x = x;
 			this.y = y;
 			this.z = z;
